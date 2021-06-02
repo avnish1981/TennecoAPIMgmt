@@ -19,7 +19,7 @@ using TennecoAPIMgmt.Results;
 
 namespace TennecoAPIMgmt.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [RoutePrefix("api/Account")]
     public class AccountController : ApiController
     {
@@ -320,6 +320,7 @@ namespace TennecoAPIMgmt.Controllers
 
         // POST api/Account/Register
         [AllowAnonymous]
+        [HttpPost]
         [Route("Register")]
         public async Task<IHttpActionResult> Register(RegisterBindingModel model)
         {
@@ -328,7 +329,7 @@ namespace TennecoAPIMgmt.Controllers
                 return BadRequest(ModelState);
             }
 
-            var user = new ApplicationUser() { UserName = model.Email, Email = model.Email };
+            var user = new ApplicationUser() {Id = model.Id , UserName = model.Email, Email = model.Email,PhoneNumber = model.PhoneNumber  };
 
             IdentityResult result = await UserManager.CreateAsync(user, model.Password);
 
