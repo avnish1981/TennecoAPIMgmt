@@ -9,7 +9,7 @@ using TennecoAPIMgmt.Repositories;
 
 namespace TennecoAPIMgmt.Controllers
 {
-    public class VendorController : ApiController
+   public class VendorController : ApiController
     {
         vendorRepositories vendorRepositories = new vendorRepositories();
         
@@ -62,5 +62,5 @@ namespace TennecoAPIMgmt.Controllers
                 return Content(HttpStatusCode.OK , " vendor deleted");
             }
         }
-    }
+    } 
 }
