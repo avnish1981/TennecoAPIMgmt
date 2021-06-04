@@ -9,5 +9,6 @@ namespace TennecoAPIMgmt.Repositories
     {
         public int factoryId { get; set; }
         public string factoryName { get; set; }
+        public string location { get; set; }
     }
 }
