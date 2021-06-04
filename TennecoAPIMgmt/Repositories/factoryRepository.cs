@@ -7,5 +7,7 @@ namespace TennecoAPIMgmt.Repositories
 {
     public class factoryRepository
     {
+        public int factoryId { get; set; }
+        public string factoryName { get; set; }
     }
 }
