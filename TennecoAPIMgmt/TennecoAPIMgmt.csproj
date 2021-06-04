@@ -226,6 +226,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Repositories\factoryRepository.cs" />
+    <Compile Include="Repositories\employeeRepository.cs" />
     <Compile Include="Repositories\productRepositories.cs" />
     <Compile Include="Repositories\vendorRepositories.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
