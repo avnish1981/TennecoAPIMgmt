@@ -7,8 +7,6 @@ namespace TennecoAPIMgmt.Repositories
 {
     public class employeeRepository
     {
-        public int Id { get; set; }
-        public string departmentname { get; set; }
-        public string name { get; set; } 
+       
     }
 }

@@ -28,6 +28,7 @@ namespace TennecoAPIMgmt.Models
 
         public DbSet<Vendor > Vendors { get; set; }
         public DbSet<factory> Factories { get; set; }
+        public DbSet<Employee > Employees { get; set; }
         
         public static ApplicationDbContext Create()
         {
